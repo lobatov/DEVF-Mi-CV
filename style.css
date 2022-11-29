@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: rgba(66, 66, 66, 0.925);
+
+}
+
+.contenedor-gral{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 5rem;
+    width: 90%;
+    height: 100%;
+
+}
+
+.contenedor-cv{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-image: url(./img/abstract.jpg);
+    max-width: 95%;
+    max-height: auto;
+    justify-content: center;
+    box-shadow: 40px 30px 18px indigo;
+    padding: 5rem;
+    height: 100%;
+}
+
+.contendor-hoja{
+    position: relative;
+    background-color: transparent;
+    padding: 5rem;
+}
+
+/* Encabezado con fotos*/
+.contenedor-header {
+    display: flex;
+    position:relative;
+    margin: 0 auto;
+    background-image: url("./img/Full\ Stack\ Developer.jpg");
+    max-width: 90%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    padding: 1rem;
+}
+
+.name{
+    position: relative;
+    float: left;
+    justify-content: space-around; 
+    padding: 1rem;
+    margin-left: 8rem;
+    border-radius: 50%;
+    box-shadow: 10px 8px 12px black;
+    border: 20px groove indigo;
+}
+
+.image-profile{
+    position: absolute;
+    float: right;
+    left: 80%;
+    margin-top: 5rem;
+    margin-left: 15rem;
+    border-radius: 3%;
+    box-shadow: 15px 8px 12px rgb(255, 208, 0);
+    rgba(255, 208, 0, 0.856)
+}
+
+.contenedor-header:hover{
+    transform: scale(1.1);
+    box-shadow: 13px 15px 37px rgb(247, 161, 3);
+}
+
+h1{
+    display: inline;
+    position: absolute;
+    justify-content: center;
+    top: 30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-family: Georgia;
+    text-shadow: 0 0 20px darkblue;
+    font-size: 180px;
+    padding: 0px;
+}
+
+.micv{
+    top:10%;
+    left:50%
+    color: whitesmoke;
+    font-family: Georgia;
+    font-size: 80px;
+}
+
+#textoencima h2{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 47%;
+    transform: translate(-40%, -10%);
+    color: antiquewhite;
+    font-family: Tahoma;
+    font-size: 80px;
+    padding: 0px;
+}
+
+/*Caracteristicas de Titulos*/
+h2{
+    margin-left: 5rem;
+    font-size: 90px;
+    font-family: Georgia;
+    color: indigo;
+}
+
+h3{
+    margin-left: 5rem;
+    color:indigo;
+    font-size: 60px;
+    font-family: Tahoma;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skills{
+    margin-left: 5rem;
+    color:blue;
+    font-size: 50px;
+    font-family: Tahoma;
+    padding-bottom: 1rem;
+}
+
+h4{
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+    font-size: 50px;
+    font-family: Tahoma;
+    color:mediumblue;
+}
+
+/*Empieza contenedor que contiene todos los generales del CV*/
+.section1{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 5rem;
+    border-top: 5rem;
+    margin-bottom: auto;
+    border-bottom: 1rem;
+}
+
+/*Corresponde a "Contacto"*/
+.hijo1{
+    margin-left: 3rem;
+    width: 30%;
+    height: auto; 
+    background-color: rgb(189, 200, 250);
+    border-radius: 1rem;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
+.hijo1 li{
+    margin-left: 3rem;
+    color: indigo;
+    font-size: 50px; 
+    list-style: none;
+    font-family: Tahoma;
+}
+
+
+/*Corresponde a "Objetivo Profesional"*/
+.hijo2{
+    position: relative;
+    margin-left: 3rem;
+    width: 30%;
+    height: auto;
+    background-color: rgb(189, 200, 250);
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+}
+
+.hijo2 p{
+    color: green;
+    font-size: 50px;
+    text-align: justify;
+    font-family: Tahoma;
+    padding: 1rem;
+}
+
+/*Corresponde a "Experiencia Laboral"*/
+.contendor-hoja .hijo3{
+    position: absolute;
+    top:1500px;
+    left: 36%;
+    right: 90%;
+    width: 60%;
+    height: 2250px;
+    background:rgb(130, 153, 253);
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    overflow-y: scroll;
+}
+
+.section1 .hijo3 .letra{
+    color:black;
+    font-size: 55px;
+}
+
+.section1 .hijo3 p{
+    position: static;
+    font-size: 55px;
+    font-style: italic;
+    margin-left: 10rem;
+    padding:2rem
+}
+
+/*Corresponde a "Competencias"*/
+.hijo4{
+    margin-left: 3rem;
+    width: 30%;
+    height: auto;
+    background-color: rgb(189, 200, 250);
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+}
+
+.hijo4 li{
+    font-size: 50px;
+    margin-left: 3rem;
+    font-family: Tahoma;
+    list-style: none;
+}
+
+/*Corresponde a "Conocimientos"*/
+.contenedorhijo5{
+    margin-left: 3rem;
+    width: 30%;
+    height: auto;
+    background-color: rgb(189, 200, 250);
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(90deg, rgb(75,92,200), rgb(199,121,208),rgb(254,172,94));
+}
+
+.habilidades{
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;   
+}
+
+.contenedorhijo5 .letr-barra{
+    margin: (2px 0 0 0);
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color:black;
+}
+
+progress{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 950px;
+    height: 50px;
+    background:darkgrey;
+    /*background: rgba(225,225,225,0.5);*/
+    border-radius: 20px;
+    box-shadow: 4px 25px 45px rgba(0,0,0,01);
+}
+
+/*Corresponde a "Formación Académica"*/
+.hijo6 {
+    margin-left: 3rem;
+    background-color: rgb(189, 200, 250);
+    border-radius: 3rem;
+    text-decoration: none;
+    position: absolute;
+    top: 950px;
+    left: 35%;
+    right: 80%;
+    width: 60%;
+    height: auto;
+}
+
+.hijo6 p{
+    position: static;
+    font-size: 75px;
+    font-style: italic;
+    margin-left: 3rem;
+    text-align: center;
+    color:darkgreen
+}
+
+.hijo6 li{
+    font-size: 75px;
+    margin-left: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgoldenrod;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
